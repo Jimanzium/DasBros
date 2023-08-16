@@ -1,0 +1,167 @@
+<!doctype html>
+
+<html>
+
+	<head>
+		<link rel = "stylesheet" href = "style.css">
+
+		<title> DAS BROS</title>
+	</head>
+
+	<body>
+		<div id = "header">
+			<div id = "title">
+				<h1> DASBROS.COM </h1>
+				
+
+				<img src = "logo.png" id = "logo">
+				<h2> Videography / Music Videos / Animations / VFX </h2>
+
+			</div>
+		</div>
+
+		<div id = "videos" class = "center">
+			<iframe id = "video" frameborder = "0" class = "video"
+				src = "https://www.youtube.com/embed/qBk6Fn6kzH4">
+			</iframe>
+			<br>
+			<br>
+		</div>
+
+		<div id = "buttonPanel" class = "center">
+			
+			<div class = "buttons">
+				<img src = "thumbnails/jazz.png">
+				<button id = "button1"> <h3> Jazz </h3> </button>
+			</div>	
+
+			<div class = "buttons">
+				<img src = "thumbnails/KENZO TOO GOOD.png">
+				<button id = "button2"> <h3> TOO GOOD </h3> </button>
+			</div>
+			<div class = "buttons">
+				<img src = "thumbnails/LEEDS.png">
+				<button id = "button3"> <h3> LEEDS </h3> </button>
+			</div>	
+			<div class = "buttons">
+				<img src = "thumbnails/MEI BACKBONE.png">
+				<button id = "button4"> <h3> Backbone </h3> </button>
+			</div>
+			<div class = "buttons">
+				<img src = "thumbnails/MMT.png">
+				<button id = "button5"> <h3> MMT </h3> </button>
+			</div>
+			<div class = "buttons">
+				<img src = "thumbnails/muddy.png">
+				<button id = "button6"> <h3> Muddy </h3> </button>
+			</div>
+			<div class = "buttons">
+				<img src = "thumbnails/NO ERROR.png">
+				<button id = "button7"> <h3> NO ERROR </h3> </button>
+			</div>
+			<div class = "buttons">
+				<img src = "thumbnails/ORIGIN PARTY.png">
+				<button id = "button8"> <h3> Origin Party </h3> </button>
+			</div>
+			<div class = "buttons">
+				<img src = "thumbnails/SAINTE.png">
+				<button id = "button9"> <h3> SAINTE </h3> </button>
+			</div>
+			<div class = "buttons">
+				<img src = "thumbnails/scales of justice.png">
+				<button id = "button10"> <h3> Scales Of Justice </h3> </button>
+			</div>
+			<div class = "buttons">
+				<img src = "thumbnails/whp.png">
+				<button id = "button11"> <h3> WHP </h3> </button>
+			</div>			
+		</div>		
+	</body>
+
+	<foot>
+		
+	</foot>
+
+	<script type = "text/javascript">
+		var w = window.innerHeight;
+		var startW = w * 0.8;
+		document.getElementById("logo").height = String(startW);
+		document.getElementById("logo").width = String(startW);
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80)
+			{
+				document.getElementById("logo").height = String(startW * 0.25);
+				document.getElementById("logo").width = String(startW * 0.25);
+			}
+			else
+			{
+				document.getElementById("logo").height = String(startW);
+				document.getElementById("logo").width = String(startW);
+		  	}
+		}
+
+
+		document.getElementById("button1").onclick = function() {
+			//document.documentElement.scrollTop = 300;
+			
+			document.getElementById("video").src = "https://www.youtube.com/embed/vTUaI5sEfwU"
+			window.scrollTo({top: 300, behavior: "smooth"});
+		}
+
+		document.getElementById("button2").onclick = function() {
+			document.getElementById("video").src = "https://www.youtube.com/embed/Zx_SiNZac4o"
+			window.scrollTo({top: 300, behavior: "smooth"});
+		}
+
+
+		document.getElementById("button3").onclick = function() {
+			document.getElementById("video").src = "https://www.youtube.com/embed/L-HJi18Nm0w"
+			window.scrollTo({top: 300, behavior: "smooth"});
+		}
+
+		document.getElementById("button4").onclick = function() {
+			document.getElementById("video").src = "https://www.youtube.com/embed/o_2902BAG9M"
+			window.scrollTo({top: 300, behavior: "smooth"});
+		}
+
+		document.getElementById("button5").onclick = function() {
+			document.getElementById("video").src = "https://www.youtube.com/embed/nU9AUsk6dG4"
+			window.scrollTo({top: 300, behavior: "smooth"});
+		}
+
+		document.getElementById("button6").onclick = function() {
+			document.getElementById("video").src = "https://www.youtube.com/embed/3MrXOUnLpqg"
+			window.scrollTo({top: 300, behavior: "smooth"});
+		}
+
+		document.getElementById("button7").onclick = function() {
+			document.getElementById("video").src = "https://www.youtube.com/embed/rTpuj8RwK4Q"
+			window.scrollTo({top: 300, behavior: "smooth"});
+		}
+
+		document.getElementById("button8").onclick = function() {
+			document.getElementById("video").src = "https://www.youtube.com/embed/MAjEyRInnJA"
+			window.scrollTo({top: 300, behavior: "smooth"});
+		}
+
+		document.getElementById("button9").onclick = function() {
+			document.getElementById("video").src = "https://www.youtube.com/embed/A-4cPZmlOuU"
+			window.scrollTo({top: 300, behavior: "smooth"});
+		}
+
+		document.getElementById("button10").onclick = function() {
+			document.getElementById("video").src = "https://www.youtube.com/embed/jJZ_XFHzd9c"
+			window.scrollTo({top: 300, behavior: "smooth"});
+		}
+
+		document.getElementById("button11").onclick = function() {
+			document.getElementById("video").src = "https://www.youtube.com/embed/qBk6Fn6kzH4"
+			window.scrollTo({top: 300, behavior: "smooth"});
+		}
+
+	</script>
+
+</html>
+
