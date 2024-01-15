@@ -6,8 +6,9 @@ html
 
     background: linear-gradient(-45deg, #1c0000, #00071c, #1c0000, #00071c);
     background-size: 400% 400%;
-    /*animation: gradient 15s ease infinite;*/
-    height: 100vh;
+	
+    animation: gradient 15s ease infinite;
+    height: 200vh;
 
 
 }
@@ -137,12 +138,14 @@ button
 
 	width:95%;
 	height: 95%;
+	
+	transition: background-color 1s ease;
 }
 
 button:hover {
 background: rgba(0,0,0,0.75);
 color: white;
-transition: background-color 0.5s ease;
+transition: background-color 1s ease;
 transition: color 1s ease;
 }
 
