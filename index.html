@@ -74,7 +74,8 @@
 			<div class = "buttons">
 				<img src = "thumbnails/whp.png">
 				<button id = "button11"> <h3> WHP </h3> </button>
-			</div>					
+			</div>	
+			
 		</div>		
 	</body>
 
@@ -90,16 +91,25 @@
 		window.onscroll = function() {scrollFunction()};
 
 		function scrollFunction() {
-			if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80)
+			if(window.innerHeight < window.innerWidth)
 			{
-				document.getElementById("logo").height = String(startW * 0.25);
-				document.getElementById("logo").width = String(startW * 0.25);
+				if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80)
+				{
+					document.getElementById("logo").height = String(startW * 0.25);
+					document.getElementById("logo").width = String(startW * 0.25);
+				}
+				else
+				{
+					document.getElementById("logo").height = String(startW);
+					document.getElementById("logo").width = String(startW);
+				}
+				
 			}
 			else
 			{
-				document.getElementById("logo").height = String(startW);
-				document.getElementById("logo").width = String(startW);
-		  	}
+				document.getElementById("logo").height = window.innerWidth * 0.25;
+				document.getElementById("logo").width = window.innerWidth * 0.25;
+			}
 		}
 
 
