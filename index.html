@@ -105,12 +105,14 @@
 		document.getElementById("logo").width = String(startW);
 		window.onscroll = function() {scrollFunction()};
 
+		//document.getElementByClass("centre").style.width: '75%';
+
 		if(window.innerHeight > window.innerWidth)
 		{
 			document.getElementById("logo").height = window.innerWidth * 0.25;
 			document.getElementById("logo").width = window.innerWidth * 0.25;
 			
-			//document.getElementById("logo").style.transition: 'all 1s';
+			//document.getElementById("logo").style.transition: '0s';
 		}
 		else
 		{
