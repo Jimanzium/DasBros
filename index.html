@@ -22,7 +22,7 @@
 
 		<div id = "videos" class = "center">
 			<iframe id = "video" frameborder = "0" class = "video"
-				src = "https://www.youtube.com/embed/qBk6Fn6kzH4">
+				src = "https://www.youtube.com/embed/7XdB4HVIE4k">
 			</iframe>
 			<br>
 			<br>
@@ -108,7 +108,13 @@
 		if(window.innerHeight > window.innerWidth)
 		{
 			document.getElementById("logo").height = window.innerWidth * 0.25;
-			document.getElementById("logo").width = window.innerWidth * 0.25;		
+			document.getElementById("logo").width = window.innerWidth * 0.25;
+			
+			//document.getElementById("logo").style.transition: 'all 1s';
+		}
+		else
+		{
+			//document.getElementById("logo").style.transitionDelay: '1s';
 		}
 
 		function scrollFunction() {
