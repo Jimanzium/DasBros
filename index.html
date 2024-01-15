@@ -105,6 +105,12 @@
 		document.getElementById("logo").width = String(startW);
 		window.onscroll = function() {scrollFunction()};
 
+		if(window.innerHeight > window.innerWidth)
+		{
+			document.getElementById("logo").height = window.innerWidth * 0.25;
+			document.getElementById("logo").width = window.innerWidth * 0.25;		
+		}
+
 		function scrollFunction() {
 			if(window.innerHeight < window.innerWidth)
 			{
@@ -122,8 +128,8 @@
 			}
 			else
 			{
-				document.getElementById("logo").height = window.innerWidth * 0.25;
-				document.getElementById("logo").width = window.innerWidth * 0.25;
+				//document.getElementById("logo").height = window.innerWidth * 0.25;
+				//document.getElementById("logo").width = window.innerWidth * 0.25;
 			}
 		}
 
